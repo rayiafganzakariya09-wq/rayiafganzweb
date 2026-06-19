@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayi Afgan Z | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0a0f1f;
+color:white;
+overflow-x:hidden;
+}
+
+/* animated background */
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:linear-gradient(-45deg,#020617,#0f172a,#1e3a8a,#0a0f1f);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+z-index:-1;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+/* navbar */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+background:rgba(255,255,255,0.04);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#38bdf8;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:25px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:120px 8%;
+gap:80px;
+flex-wrap:wrap;
+}
+
+.profile{
+width:340px;
+height:340px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+box-shadow:0 0 40px rgba(56,189,248,.6);
+animation:float 4s ease infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-12px);}
+100%{transform:translateY(0);}
+}
+
+.hero-text{
+max-width:560px;
+}
+
+.hero-text h3{
+color:#38bdf8;
+margin-bottom:10px;
+font-weight:400;
+}
+
+.hero-text h1{
+font-size:64px;
+line-height:1.1;
+margin-bottom:15px;
+}
+
+.role{
+font-size:20px;
+color:#94a3b8;
+margin-bottom:20px;
+}
+
+.hero-text p{
+line-height:1.8;
+font-size:17px;
+color:#cbd5e1;
+}
+
+.btns{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+text-decoration:none;
+border-radius:12px;
+margin-right:12px;
+font-weight:600;
+}
+
+.primary{
+background:#38bdf8;
+color:black;
+}
+
+.secondary{
+border:1px solid white;
+color:white;
+}
+
+/* sections */
+
+section{
+padding:90px 8%;
+}
+
+.title{
+font-size:38px;
+margin-bottom:25px;
+color:#38bdf8;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:22px;
+backdrop-filter:blur(14px);
+line-height:2;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* skills */
+
+.skill{
+margin-bottom:20px;
+}
+
+.bar{
+height:12px;
+background:#1e293b;
+border-radius:20px;
+overflow:hidden;
+margin-top:6px;
+}
+
+.fill{
+height:100%;
+background:#38bdf8;
+}
+
+/* socials */
+
+.social a{
+display:inline-block;
+padding:12px 22px;
+margin:10px;
+text-decoration:none;
+background:#38bdf8;
+color:black;
+border-radius:12px;
+font-weight:600;
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+.profile{
+width:260px;
+height:260px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">RA</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#profile">Profile</a>
+<a href="#skills">Skills</a>
+<a href="#social">Social</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<img src="profile.jpg.JPG" class="profile">
+
+<div class="hero-text">
+
+<h3>Hello, I'm</h3>
+
+<h1>Rayi Afgan Z</h1>
+
+<div class="role">
+Student • Future Developer
+</div>
+
+<p>
+Passionate about technology, coding, and building modern digital experiences.
+Always learning, always improving, and always creating new ideas for the future.
+</p>
+
+<div class="btns">
+
+<a href="#about" class="btn primary">Explore</a>
+
+<a href="#contact" class="btn secondary">Contact Me</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+I am a passionate student with strong curiosity in technology, software development, and digital creativity. I enjoy learning new skills and improving myself every day.
+
+</div>
+
+</section>
+
+
+<section id="profile">
+
+<h2 class="title">Personal Profile</h2>
+
+<div class="card">
+
+🏔 Hobby : Hiking  
+<br>
+🎵 Favorite Music : About You — The 1975  
+<br>
+🎬 Favorite Film : Cars Series  
+<br>
+🎮 Interest : Gaming & Technology  
+
+</div>
+
+</section>
+
+
+<section id="skills">
+
+<h2 class="title">Technical Skills</h2>
+
+<div class="card">
+
+<div class="skill">
+Python
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+Java
+<div class="bar"><div class="fill" style="width:82%"></div></div>
+</div>
+
+<div class="skill">
+HTML / CSS
+<div class="bar"><div class="fill" style="width:88%"></div></div>
+</div>
+
+<div class="skill">
+GitHub
+<div class="bar"><div class="fill" style="width:75%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="social">
+
+<h2 class="title">Social Media</h2>
+
+<div class="card social">
+
+<a href="https://www.instagram.com/afganzett">Instagram</a>
+
+<a href="https://www.tiktok.com/@afganzettt">TikTok</a>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card">
+
+📧 Email : rayiafganzakariya09@gmail.com  
+<br>
+📱 WhatsApp : 0823-2833-3606
+
+</div>
+
+</section>
+
+
+<footer>
+
+©️ 2025 Rayi Afgan Z
+
+</footer>
+
+</body>
+</html>
